@@ -1,0 +1,30 @@
+fieldset { clear: both; }
+.cards {
+    list-style-type: none;
+    margin-left: 0;
+    float: left;
+    li {
+      .size(23px,32px);
+      .hide-text();
+      float: left;
+      margin-left: 10px;
+      background: url('../images/cc-sprite.png') 0 0 no-repeat;
+      &.visa {
+        background-position: 0 0;
+        margin-left: 0;
+        &.off { background-position: 0 -23px; }
+      }
+      &.visa_electron { background-position: -32px 0;
+        &.off { background-position: -32px -23px; }
+      }
+      &.mastercard { background-position: -64px 0;
+        &.off { background-position: -64px -23px; }
+      }
+      &.maestro { background-position: -96px 0;
+        &.off { background-position: -96px -23px; }
+      }
+      &.discover { background-position: -128px 0;
+        &.off { background-position: -128px -23px; }
+      }
+    }
+}
